@@ -1,0 +1,153 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e7f0ff;
+    margin: 0;
+    color: #212529;
+}
+
+h1, h2 {
+    font-weight: 600;
+    color: #0d6efd;
+}
+
+.card {
+    border-radius: 0.75rem;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s, color 0.3s;
+    background-color: #ffffff;
+    color: #212529;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.btn-primary, .btn-secondary {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    transition: transform 0.15s, background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: scale(1.05);
+}
+
+.bi {
+    font-size: 2rem;
+    color: #0d6efd;
+    transition: color 0.3s;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-link {
+    color: #212529 !important;
+}
+
+.navbar .nav-link.active {
+    color: #0d6efd !important;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #d8dce0;
+    font-size: 0.9rem;
+    color: #495057;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+section.landing {
+    background-color: #cfe2ff;
+    padding: 3rem 0;
+}
+
+section.actividades {
+    background-color: #ffffff;
+    padding: 3rem 0;
+}
+
+section.como-usar {
+    background-color: #f1f3f5;
+    padding: 3rem 0;
+}
+
+
+#toggle-night {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1051;
+}
+
+@media (max-width: 992px) {
+    #toggle-night {
+        top: 1rem;
+        right: 6rem;
+    }
+}
+
+/* Modo nocturno */
+body.night-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0;
+}
+
+body.night-mode h1,
+body.night-mode h2 {
+    color: #66b2ff !important;
+}
+
+body.night-mode .card {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+body.night-mode section.landing {
+    background-color: #2a2f42 !important;
+}
+
+body.night-mode section.actividades {
+    background-color: #2a2a2a !important;
+}
+
+body.night-mode section.como-usar {
+    background-color: #1f1f1f !important;
+}
+
+body.night-mode footer {
+    background-color: #161616 !important;
+    color: #cfcfcf !important;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 992px) {
+    body.night-mode {
+        background-color: #1c1c1c !important;
+        color: #e0e0e0;
+    }
+
+    body.night-mode .card {
+        background-color: #333333 !important;
+    }
+
+    body.night-mode section.landing {
+        background-color: #2f3445 !important;
+    }
+
+    body.night-mode section.actividades {
+        background-color: #2d2d2d !important;
+    }
+
+    body.night-mode section.como-usar {
+        background-color: #272727 !important;
+    }
+
+    body.night-mode footer {
+        background-color: #1d1d1d !important;
+    }
+}
